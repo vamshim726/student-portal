@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Student Registration Portal">
+  <meta name="keywords" content="HTML, Forms, Multimedia, Tables">
+  <meta name="author" content="Vamshi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Student Registration Portal">
+<meta property="og:description" content="A complete student registration system with forms, multimedia, tables, and more built using HTML.">
+<meta property="og:image" content="https://lh3.googleusercontent.com/proxy/eKBEK2wSlZC1szJe8i6_rkWS5UIH02dHDRJxWxhUmqirbm-G1CbiAYGZ6bf8NxV0FobQzfDBr5ERJfUuSFUf1gKy2M7K">
+  <title>Student Registration Portal</title>
+</head>
+<body>
+
+  <!-- Semantic Tag -->
+  <header>
+  <h1>Welcome to Student Registration Portal</h1>
+  <marquee behavior="scroll" direction="left">Register Now for the Upcoming Semester!</marquee>
+  <p><a href="#documents">Jump to Required Documents</a></p>
+</header>
+
+
+  <!-- Navigation with anchor tags -->
+  <nav>
+    <ul>
+      <li><a href="about.html">About (Relative Link)</a></li>
+      <li><a href="https://www.google.com" target="_blank">Visit Example (Absolute Link)</a></li>
+    </ul>
+  </nav>
+
+  <!-- Semantic + Form Tags -->
+  <main>
+    <section>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Student Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z ]{3,}"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob"><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+          <input type="submit" value="Register">
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- HTML Table -->
+    <section>
+      <h2>Registered Students (Demo)</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>DOB</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>alice@example.com</td>
+            <td>Female</td>
+            <td>1999-05-15</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Multimedia & iframe -->
+    <section>
+      <h2>Learn More</h2>
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <iframe width="320" height="240" src="https://www.youtube.com/embed/K4TOrB7at0Y?si=lI9vB3S913C40uZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Lists -->
+    <section id="documents">
+  <h2>Required Documents</h2>
+  <ul>
+    <li>Passport Size Photo</li>
+    <li>Identity Proof</li>
+    <li>Marksheet</li>
+  </ul> 
+
+
+      
+
+      <h2>Steps to Apply</h2>
+      <ol>
+        <li>Fill the form</li>
+        <li>Upload documents</li>
+        <li>Submit application</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- Non Semantic Tag -->
+  <div style="margin-top: 40px;">
+    <h2>Contact Us</h2>
+    <p>Email: support@portal.com</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Student Registration Portal</p>
+  </footer>
+
+</body>
+</html>
